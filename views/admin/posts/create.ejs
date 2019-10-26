@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <%- include('../../imports'); -%>
+    <a href="/public/stylesheets/style.css" type="stylesheet"></a>
+</head>
+<body>
+    <%- include('../../navbar'); -%>
+
+    
+    <div class="container">
+        <div class="col-md-12 row">
+            <h1>Nova Noticia</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post" action="create">
+                    <div class="form-group">
+                        <label for="testimonialName">Envolvido</label>
+                        <input name="name" type="text" class="form-control" id="testimonialName" placeholder="Digite o Envolvido">
+                    </div>
+                    <div class="form-group">
+                        <label for="testimonial">Responsavel</label>
+                        <textarea  name="testimonial" class="form-control" id="testimonial" placeholder="Digite o Responsavel"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Noticia</label>
+                        <input name="company" type="text" class="form-control" id="company" placeholder="Digite a Noticia">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Título</label>
+                        <input name="title" type="text" class="form-control" id="title" placeholder="Digite o Título">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
